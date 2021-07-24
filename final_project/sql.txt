@@ -1,0 +1,19 @@
+mysql -u root -p -h 127.0.0.1 -P 8111
+show databases;
+use comp3015;
+ create table users(
+    -> id int primary key auto_increment,
+    -> firstname varchar(255),
+    -> lastname varchar(255),
+    -> email varchar(50),
+    -> password varchar(60)
+    -> );
+ create table products(
+    -> id int primary key auto_increment,
+    -> email varchar(50),
+    -> title varchar(100),
+    -> price double(10,2),
+    -> description varchar(255),
+    -> picture varchar(60)
+    -> );
+
